@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background: url('aduh.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    animation: slideDown 1s ease-in-out;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+.navbar .brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .brand .text {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #00aaff;
+}
+
+.content {
+    text-align: left;
+    padding: 100px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.content h1 {
+    font-size: 48px;
+    color: #00aaff;
+}
+
+.content h2 {
+    font-size: 24px;
+    color: #cccccc;
+}
+
+.content p {
+    font-size: 18px;
+    color: #cccccc;
+    margin: 20px 0;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.buttons .register {
+    background-color: #007bff;
+    color: white;
+}
+
+.buttons .register:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.buttons .login {
+    background-color: #ff007b;
+    color: white;
+}
+
+.buttons .login:hover {
+    background-color: #cc0066;
+    transform: scale(1.05);
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.footer a {
+    color: #cccccc;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #00aaff;
+}
